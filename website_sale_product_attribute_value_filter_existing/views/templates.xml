@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright 2019 Tecnativa - Victor M.M. Torres
      License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
 <odoo>
@@ -22,10 +22,8 @@
         </xpath>
     </template>
     <template id="o_wsale_offcanvas" inherit_id="website_sale.o_wsale_offcanvas">
-        <xpath expr="//t[@t-foreach='a.value_ids']" position="attributes">
-            <attribute
-                name="t-if"
-            >not attr_values_used_ids or v.id in attr_values_used_ids</attribute>
+        <xpath expr="//t[@t-cache='a,attrib_set']/t[2]" position="attributes">
+            <attribute name="t-if">not attr_values_used_ids or v.id in attr_values_used_ids</attribute>
         </xpath>
         <xpath expr="//input[@name='attribute_value']/../.." position="attributes">
             <attribute
@@ -37,7 +35,8 @@
         id="o_wsale_offcanvas_color_attribute"
         inherit_id="website_sale.o_wsale_offcanvas_color_attribute"
     >
-        <xpath expr="//t[@t-foreach='a.value_ids']/label" position="attributes">
+        <!-- <xpath expr="//t[@t-foreach='a.value_ids']/label" position="attributes"> -->
+        <xpath expr="//input[@name='attribute_value']/.." position="attributes">
             <attribute
                 name="t-if"
             >not attr_values_used_ids or v.id in attr_values_used_ids</attribute>
