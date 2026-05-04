@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-18 10:04+0000\n"
-"PO-Revision-Date: 2025-03-24 15:06+0000\n"
-"Last-Translator: Larsq1 <l.quaedvlieg01@gmail.com>\n"
+"PO-Revision-Date: 2026-02-25 07:30+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch (https://www.transifex.com/oca/teams/23907/nl/)\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.navigation_buttons
@@ -27,7 +27,8 @@ msgstr "<span class=\"px-3\">of</span>"
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.navigation_buttons
 msgid "<span>Confirm <span class=\"fa fa-angle-right ms-2 fw-light\"/></span>"
-msgstr "<span>Bevestig <span class=\"fa fa-angle-right ms-2 fw-light\"/></span>"
+msgstr ""
+"<span>Bevestig <span class=\"fa fa-angle-right ms-2 fw-light\"/></span>"
 
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.confirmation_order_error
@@ -59,6 +60,27 @@ msgid "Contact"
 msgstr "Contact"
 
 #. module: website_sale_checkout_skip_payment
+#: model:ir.model.fields,help:website_sale_checkout_skip_payment.field_res_config_settings__website_sale_checkout_payment_skip_message
+#: model:ir.model.fields,help:website_sale_checkout_skip_payment.field_website__website_sale_checkout_payment_skip_message
+msgid ""
+"Fill in this with a message for the customer to confirm the order as payment "
+"will be skipped."
+msgstr ""
+
+#. module: website_sale_checkout_skip_payment
+#: model:ir.model.fields,field_description:website_sale_checkout_skip_payment.field_res_config_settings__website_sale_checkout_payment_skip_message
+#: model:ir.model.fields,field_description:website_sale_checkout_skip_payment.field_website__website_sale_checkout_payment_skip_message
+msgid "Message displayed instead of payment methods."
+msgstr ""
+
+#. module: website_sale_checkout_skip_payment
+#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
+msgid ""
+"Message shown to the user during the payment step when payment will be "
+"skipped"
+msgstr ""
+
+#. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
 msgid "Message shown to the user when the purchase is finished"
 msgstr "Bericht om weertegeven aan de gebruiker wanner de verkoop is afgerond"
@@ -68,6 +90,11 @@ msgstr "Bericht om weertegeven aan de gebruiker wanner de verkoop is afgerond"
 #: code:addons/website_sale_checkout_skip_payment/models/website.py:0
 msgid "Our team will check your order and send you payment information soon."
 msgstr "Ons team controleert je order en zal je de betaalinformatie sturen."
+
+#. module: website_sale_checkout_skip_payment
+#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
+msgid "Sale Checkout Payment Skip Message"
+msgstr ""
 
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
@@ -84,6 +111,12 @@ msgstr "Winkel - Bevestiging - Fout"
 #: model:ir.model.fields,field_description:website_sale_checkout_skip_payment.field_res_users__skip_website_checkout_payment
 msgid "Skip Website Checkout Payment"
 msgstr "Sla Website Checkout Betaling Over"
+
+#. module: website_sale_checkout_skip_payment
+#. odoo-python
+#: code:addons/website_sale_checkout_skip_payment/models/website.py:0
+msgid "The payment step will be skipped. You can confirm the order."
+msgstr ""
 
 #. module: website_sale_checkout_skip_payment
 #: model:ir.model,name:website_sale_checkout_skip_payment.model_website
